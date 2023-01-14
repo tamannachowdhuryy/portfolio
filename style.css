@@ -1,0 +1,243 @@
+html,body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+/* main page */
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background1.avif);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+    
+ul{
+    float: right;
+    position: relative;
+    right: 20px;
+    top: -70px;
+}
+
+/* navbar */
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: pink;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position:absolute;
+    top: 30%;
+    transform: translate(-1%);
+    text-align: center;
+    color: #ffff;
+}
+
+.content h1{
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+.content h1{
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid #e151bf;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #e151bf;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+/* contact page */
+.containers{
+    width: 100%;
+    height: 0;
+    margin-top: -260;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    transform: translate(-1%);
+    text-align: center;
+    color: #ffff;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vm;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+form h3{
+    color: white;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background:white;
+    font-size: 16px;
+}
+
+/* about page */
+
+.profile{
+    width: 200px;
+    height: 120px;
+    margin-top: -440;
+    left: 250px;
+    position: absolute;
+}
+.profile img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border:5px solid white;   
+}
+.intro h1{
+    color: #fff;
+    font-size: 50px;
+    height: 120px;
+    margin-top: -430;
+    left: 740px;
+    position: absolute;
+    text-align: justify;
+}
+.intro h3{
+    font-size: 20px;
+    color: #fff;
+    height: 120px;
+    margin-top: -370;
+    left: 790px;
+    position: absolute;
+    text-align: center;
+}
+.intro p{
+    color: #fff;
+    height: 120px;
+    margin-top: -340;
+    left: 630px;
+    font-size: 15px;
+    position: absolute;
+    text-align: center;
+}
+.social{
+    height: 120px;
+    margin-top: -200;
+    left: 980px;
+    position: absolute;
+    text-align: center;
+    
+}
+.social img{
+    height: 40px;
+    width: 40px;
+    text-align: right;
+    
+}
+/* project page */
+.title{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -580;
+    margin-left: 410;
+}
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: 50px 50px;
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    background: black;
+    margin: 0px 10px;
+    transition: 1s;
+
+}
+.box:hover{
+    transform: scale(1.3);
+    background: black;
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+    
+}
+.box img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}

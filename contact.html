@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title> Tamanna Chowdhury</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="script.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init("_-kv49__S2OLbuCcs");
+    })();
+</script>
+</head>
+
+    <div class="banner"> 
+        <div class="navbar">
+        <!-- Nav bar-->
+            <img src="logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=aboutme.html>About Me</a></li>
+                    <li><a href=projects.html>Project</a></li>
+                    <li><a href=contact.html>Contact</a></li>
+                </ul>   
+            </nav>
+        </div>
+    </div>
+<body>
+    <div class="containers">
+        <form>
+            <center><h3>GET IN TOUCH</h3></center>
+            <input type="text" id="name" placeholder="Your Name" required /><br />
+            <input type="email" id="email_id" placeholder="E-mail" required /><br />
+            <input type="phone" id="phone" placeholder="Phone Number" required /><br />
+            <textarea id="message" rows="4" placeholder="Message"></textarea><br />
+            <center><button onclick="SendMail()"><span></span> Submit</button></center>
+        </form>
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("YOUR_PUBLIC_KEY");
+   })();
+</script>
+    </div>
+</body>
+</html>
